@@ -20,6 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('blogApp/',views.index),
     path('',views.index), 
-    path('<str:pk>/', views.detail)
+    path('<slug:pk>/', views.detail)
 
 ]
